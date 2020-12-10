@@ -271,7 +271,6 @@ section .title::after {
 }
 
 .about .about__content .left .about__hover {
-  
   position: absolute;
   background: #2e3a828c;
   top: 0;
@@ -380,51 +379,40 @@ section .title::after {
 }
 
 .services .services__content .card .center {
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
   height: 400px;
   width: 290px;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
 
-
-
 .front-face-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../assets/images/servicios/MTTO-TRX-LISTA.jpg);
-  
 }
 
 .front-face-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../assets/images/servicios/montaje.jpg);
-  
 }
 
 .front-face-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../assets/images/servicios/conmutadorbajocarga.jpg);
-  
 }
 
 .front-face-4 {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../assets/images/servicios/movimiento_lista.jpg);
-  
 }
 
 .front-face-5 {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../assets/images/servicios/maquina_abb.png);
-  
 }
 
 .front-face-6 {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../assets/images/servicios/pruebas_lista.jpg);
-  
 }
 
 .front-face,
@@ -514,3 +502,41 @@ i.fab {
 .center:hover > .front-face {
   transform: rotateY(-180deg);
 }
+
+/* Skils Section */
+
+.skills .title::after {
+  content: "100% Comprometidos";
+}
+
+.skills .skills__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills .skills__content .multi-section,
+.skills .skills__content .multi-section-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  background: #eee;
+  column-gap: 10px;
+}
+
+.skills .skills__content .multi-section img,
+.skills .skills__content .multi-section-two img {
+  width: 100%;
+}
+
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.skills .skills__content.multi-section-two {
+  grid-template-areas: "b a";
+}
+
+

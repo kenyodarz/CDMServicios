@@ -165,7 +165,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: crimson;
+  background: var(--color-primary-black);
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -539,4 +539,79 @@ i.fab {
   grid-template-areas: "b a";
 }
 
+/* Teams Section */
 
+/* Teams Section */
+
+.teams .title::after {
+  content: "Nuestro Equipo";
+}
+
+.teams .carousel .card {
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover {
+  background: var(--color-primary-black);
+}
+
+.teams .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.teams .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--color-primary-black);
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img {
+  border-color: #fff;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-black) !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: var(--color-primary-black) !important;
+}

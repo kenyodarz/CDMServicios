@@ -519,7 +519,6 @@ i.fab {
 .skills .skills__content .multi-section-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
   background: #eee;
   column-gap: 10px;
 }
@@ -527,6 +526,8 @@ i.fab {
 .skills .skills__content .multi-section img,
 .skills .skills__content .multi-section-two img {
   width: 100%;
+  align-self: center;
+  justify-self: center;
 }
 
 .a {
@@ -731,4 +732,199 @@ footer span a {
 }
 footer span a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Media Query Start */
+
+@media (max-width: 1300px) {
+  .home .max__width {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1104px) {
+  .about .about__content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max__width {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 947px) {
+  .menu__btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .menu__btn i.active:before {
+    content: "\f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .home .home__content .text-2 {
+    font-size: 70px;
+  }
+
+  .home .home__content .text-3 {
+    font-size: 35px;
+  }
+
+  .home .home__content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+
+  .max__width {
+    max-width: 930px;
+  }
+
+  .about .about__content .column {
+    width: 100%;
+  }
+
+  .about .about__content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about .about__content .right {
+    flex: 100%;
+  }
+
+  .services .services__content {
+    justify-content: space-evenly;
+  }
+
+  .services .services__content .card {
+    width: calc(40% + 15px);
+    margin-bottom: 20px;
+  }
+
+  .skills .skills__content .multi-section,
+  .skills .skills__content .multi-section-two {
+    padding: 10px;
+  }
+}
+@media (max-width: 690px) {
+  .max__width {
+    padding: 0 50px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .home .home__content .text-2 {
+    font-size: 60px;
+  }
+  .home .home__content .text-3 {
+    font-size: 32px;
+  }
+  .home .home__content a {
+    font-size: 20px;
+  }
+  .services .services__content .card {
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    width: calc(50% + 15px);
+    margin-bottom: 20px;
+  }
+
+  .services .services__content .card .center {
+    /* height: 400px; */
+    width: 270px;
+    /* transform-style: preserve-3d; */
+    /* perspective: 1000px; */
+  }
+
+  .skills .skills__content .multi-section,
+  .skills .skills__content .multi-section-two {
+    grid-template-columns: 1fr;
+  }
+
+  .skills .skills__content .multi-section-two {
+    grid-template-areas:
+      "a"
+      "b";
+  }
+  .skills .skills__content .column,
+  .contact .contact__content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .home__content .text-2 {
+    font-size: 50px;
+  }
+  .home .home__content .text-3 {
+    font-size: 27px;
+  }
+
+  .skills .title::after,
+  .services .title::after,
+  .teams .title::after {
+    content: "";
+  }
+
+  .services .services__content .card {
+    width: 100%;
+    /* width: calc(50% + 15px); */
+    margin-bottom: 20px;
+  }
+
+  .services .services__content .card .center {
+    /* height: 400px; */
+    width: 365px;
+    /* transform-style: preserve-3d; */
+    /* perspective: 1000px; */
+  }
+
+  .about .about__content .right .text,
+  .skills .skills__content .left .text {
+    font-size: 19px;
+  }
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
 }

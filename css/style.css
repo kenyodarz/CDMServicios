@@ -1,5 +1,9 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+  font-family: EnterSansman;
+  src: url(/assets/fonts/enter-sansman.bold-italic.ttf) format("truetype");
+}
 :root {
   --color-primary: #3f51b5;
   --color-primary-light: #7e88c1;
@@ -14,7 +18,8 @@
   padding: 0px;
   box-sizing: border-box;
   /* font-family: "Poppins", sans-serif; */
-  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'EnterSansman', sans-serif;
   text-decoration: none;
 }
 
@@ -63,7 +68,8 @@ section {
 .teams,
 .contact,
 footer {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: 'Oswald', sans-serif;
   /* font-family: "Ubuntu", sans-serif; */
 }
 
@@ -78,6 +84,7 @@ footer {
 }
 
 section .title {
+  font-family: 'Oswald', sans-serif;
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -88,6 +95,7 @@ section .title {
 }
 
 section .title::before {
+  font-family: 'Oswald', sans-serif;
   content: "";
   position: absolute;
   bottom: 0px;
@@ -99,6 +107,7 @@ section .title::before {
 }
 
 section .title::after {
+  font-family: 'Oswald', sans-serif;
   position: absolute;
   bottom: -8px;
   left: 50%;
@@ -111,6 +120,7 @@ section .title::after {
 
 /* Estilizando la Navbar */
 .navbar {
+  font-family: 'Oswald', sans-serif;
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -121,17 +131,20 @@ section .title::after {
 }
 
 .navbar.sticky {
+  font-family: 'Oswald', sans-serif;
   padding: 15px 0;
   background: var(--color-primary-black);
 }
 
 .navbar .max__width {
+  font-family: 'Oswald', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .navbar .logo a {
+  font-family: 'Oswald', sans-serif;
   /* color: white; */
   color: white;
   font-size: 35px;
@@ -139,15 +152,18 @@ section .title::after {
 }
 
 .navbar .logo a span {
+  font-family: 'Oswald', sans-serif;
   color: var(--color-primary-light);
 }
 
 .navbar .menu li {
+  font-family: 'Oswald', sans-serif;
   list-style: none;
   display: inline-block;
 }
 
 .navbar .menu li a {
+  font-family: 'Oswald', sans-serif;
   display: block;
   color: white;
   font-size: 18px;
@@ -157,10 +173,12 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
+  font-family: 'Oswald', sans-serif;
   color: var(--color-primary-black);
 }
 
 .navbar.sticky .menu li a:hover {
+  font-family: 'Oswald', sans-serif;
   color: #fff;
 }
 
@@ -265,6 +283,7 @@ section .title::after {
 /* About Seccion */
 
 .about .title::after {
+  font-family: 'Oswald', sans-serif;
   content: "Quienes Somos";
 }
 
@@ -360,12 +379,14 @@ section .title::after {
 
 .services .title::before,
 .teams .title::before {
+  font-family: 'Oswald', sans-serif;
   background: #fff;
 }
 
 .services .title::after,
 .teams .title::after {
   background: var(--color-primary-light);
+  font-family: 'Oswald', sans-serif;
   content: "Nuestras Especialidades";
 }
 
@@ -519,9 +540,11 @@ i.fab {
 
 .skills .title::after {
   content: "100% Comprometidos";
+  font-family: 'Oswald', sans-serif;
 }
 
 .skills .skills__content {
+  font-family: 'Oswald', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 20px;

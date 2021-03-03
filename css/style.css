@@ -51,7 +51,7 @@ body {
   background: #555;
 }
 
-/* Mismo estili para cada Seccion */
+/* Mismo estilo para cada Seccion */
 section {
   padding: 100px 0;
 }
@@ -154,6 +154,12 @@ section .title::after {
 .navbar .logo a span {
   font-family: 'Oswald', sans-serif;
   color: var(--color-primary-light);
+}
+
+.navbar .logo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 
 .navbar .menu li {
